@@ -1,8 +1,11 @@
+import { SideBar } from "./components/SideBar";
+
 function App() {
   return (
-    <div className="container text-center mt-5">
-      <h1 className="text-primary">Welcome to My React App</h1>
-      <button className="btn btn-success">Click Me</button>
+    <div className='vh-100  bg-black'>
+        <div className="container-fluid row " style={{ height: "90%" }}>
+          <SideBar />
+        </div>
     </div>
   );
 }
