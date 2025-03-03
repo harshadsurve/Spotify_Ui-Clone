@@ -26,14 +26,14 @@ export const SideBar = () => {
             </div>
         </div>
         <div className='p-1 bg-secondary  rounded fw-semibold  d-flex flex-column align-items-start justify-content-start   mb-2'>
-            <h3>Create Your First Playlist</h3>
+            <h4>Create Your First Playlist</h4>
             <p>it's easy we will help you</p>
-            <button type="button" className="btn  btn-light p-2 rounded-pill">Create playlist</button>
+            <button type="button" className="btn  btn-light p-1 rounded-pill">Create playlist</button>
         </div>
         <div className='p-1 bg-secondary   rounded fw-semibold  d-flex flex-column align-items-start justify-content-start '>
-            <h3>Let's findsome prodcasts to follow </h3>
+            <h4>Let's findsome prodcasts to follow </h4>
             <p>we'll keep you update on new episodes</p>
-            <button type="button" className="btn  btn-light p-2 rounded-pill">Browse prodcasts</button>
+            <button type="button" className="btn  btn-light p-1 rounded-pill">Browse prodcasts</button>
         </div>
     </div>
    </div>
