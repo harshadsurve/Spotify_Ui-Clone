@@ -10,9 +10,9 @@ const DisplayHome = () => {
       <NavBar />
       
       {/* Featured Charts Section */}
-      <div className="container  mb-4">
+      <div className="container mb-4 ">
         <h1 className="my-5 fw-bold fs-2">Featured Charts</h1>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="d-flex row-cols-md-4 g-4 "  style={{ overflowX: 'auto', whiteSpace: 'nowrap' }}>
           {albumsData.map((item, index) => (
             <div key={index} className="col">
               <AlbumItem 
@@ -27,20 +27,21 @@ const DisplayHome = () => {
       </div>
 
       {/* Today's Biggest Hits Section */}
-      <div className="container  mb-4">
+      <div className="container mb-4">
         <h1 className="my-5 fw-bold fs-2">Today's Biggest Hits</h1>
-        <div className="d-flex row-cols-md-3">
-          {songsData.map((item, index) => (
-            <div key={index} className="col">
-              <SongItem 
-                name={item.name} 
-                desc={item.desc} 
-                id={item.id} 
-                image={item.image} 
-              />
-            </div>
-          ))}
-        </div>
+        <div className="d-flex row-cols-md-4" style={{ overflowX: 'auto', whiteSpace: 'nowrap' }}>
+  {songsData.map((item, index) => (
+    <div key={index} className="col">
+      <SongItem 
+        name={item.name} 
+        desc={item.desc} 
+        id={item.id} 
+        image={item.image} 
+      />
+    </div>
+  ))}
+</div>
+
       </div>
     </>
   )
